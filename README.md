@@ -1,6 +1,25 @@
-# Getting Started with Create React App
+# Bug Blaster
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Live Demo:** [https://GhantaParamita.github.io/BugBlaster](https://GhantaParamita.github.io/BugBlaster)
+
+## Overview
+
+Bug Blaster is a React-based ticket management application designed to help teams track, manage, and prioritize bug reports and tasks. Users can create new tickets, assign priority levels, edit existing tickets, and sort them based on priority.
+
+## Features
+
+- **Create Tickets**: Add new bug reports or tasks with description and priority level
+- **Manage Tickets**: Edit existing tickets or delete them
+- **Priority Sorting**: Sort tickets by priority (High to Low or Low to High)
+- **State Management**: Uses React's useReducer hook for efficient state management
+- **Responsive UI**: Clean and intuitive user interface
+
+## Technology Stack
+
+- **React** 18.3.1
+- **React DOM** 18.3.1
+- **React Scripts** 5.0.1
+- **CSS** for styling
 
 ## Available Scripts
 
@@ -8,7 +27,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
+Runs the app in development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -16,7 +35,7 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
+Launches the test runner in interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
@@ -27,27 +46,49 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run deploy`
 
-### `npm run eject`
+Deploys the application to GitHub Pages.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+├── components/        # React components
+│   ├── TicketForm.js     # Form component for creating/editing tickets
+│   ├── TicketList.js     # Component to display list of tickets
+│   └── TicketItem.js     # Individual ticket item component
+├── reducers/          # State management
+│   └── ticketReducer.js  # Reducer for ticket state
+├── utilities/         # Helper functions
+│   └── sortingUtilities.js # Ticket sorting logic
+├── App.js            # Main application component
+├── App.css           # App styles
+└── index.js          # Application entry point
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Getting Started
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start the development server: `npm start`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Deployment
+
+This project is deployed to GitHub Pages. To deploy your changes:
+
+```bash
+npm run deploy
+```
+
+This will build the app and deploy it to the URL specified in the `homepage` field of package.json.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn more about React, check out the [React documentation](https://reactjs.org/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+For more information about Create React App, see the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 ### Analyzing the Bundle Size
 
