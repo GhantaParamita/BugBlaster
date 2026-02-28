@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/BugBlaster/static/css/main.a954dff6.css",
+    "main.js": "/BugBlaster/static/js/main.dc52d1ea.js",
+    "static/js/453.54024116.chunk.js": "/BugBlaster/static/js/453.54024116.chunk.js",
+    "static/media/logo.svg": "/BugBlaster/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/BugBlaster/index.html",
+    "main.a954dff6.css.map": "/BugBlaster/static/css/main.a954dff6.css.map",
+    "main.dc52d1ea.js.map": "/BugBlaster/static/js/main.dc52d1ea.js.map",
+    "453.54024116.chunk.js.map": "/BugBlaster/static/js/453.54024116.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a954dff6.css",
+    "static/js/main.dc52d1ea.js"
+  ]
+}
